@@ -1,9 +1,8 @@
 # flea-market
+> A DApp based on Nebulas.<br>
+> This application is based on Nebulas net. I used the smart contract on Nebulas mainnet.
 
-> 		A DApp based on Nebulas 
-> 		This application is based on Nebulas net. I used the smart contract on Nebulas mainnet.
-
-## To run it, 
+## To run it
 
 1. You can build this project and deploy it on the server(such as Tomcat, Nginx...). 
 
@@ -13,9 +12,11 @@
 
 4. P.S.: To use this DApp, you need a Nebulas wallet account on mainnet with any positive number of NAS.
 
-> A Vue.js project 
+
 
 ## Build Setup
+
+> A Vue.js project 
 
 ``` bash
 # install dependencies
