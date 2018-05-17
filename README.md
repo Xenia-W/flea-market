@@ -10,6 +10,10 @@ To run it,
 
 2. Install the WebExtensionWallet on your chrome browser, see details here: https://github.com/ChengOrangeJu/WebExtensionWallet
 
+3. Open the url in your chrome browser, and you can use it now.
+
+4. P.S.: To use this DApp, you need a Nebulas wallet account on mainnet with positive number of NAS.
+
 > A Vue.js project 
 
 ## Build Setup
