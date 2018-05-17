@@ -1,8 +1,7 @@
 # flea-market
-================================================
-> A DApp based on Nebulas
-> This application is based on Nebulas net. 
-> We used the smart contract on Nebulas mainnet.
+
+> 		A DApp based on Nebulas 
+> 		This application is based on Nebulas net. I used the smart contract on Nebulas mainnet.
 
 ## To run it, 
 
