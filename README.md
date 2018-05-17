@@ -4,15 +4,14 @@
 
 ## To Run It
 
-```
-1. You can build this project and deploy it on the server(such as Tomcat, Nginx...). 
+1.	You can build this project and deploy it on the server(such as Tomcat, Nginx...). 
 
-2. Install the WebExtensionWallet on your chrome browser, see details [here](https://github.com/ChengOrangeJu/WebExtensionWallet).
+2.	Install the WebExtensionWallet on your chrome browser, see details [here](https://github.com/ChengOrangeJu/WebExtensionWallet).
 
-3. Open the url in your chrome browser, and you can use it now.
+3.	Open the url in your chrome browser, and you can use it now.
 
-4. P.S.: To use this DApp, you need a Nebulas wallet account on mainnet with any positive number of NAS.
-```
+4.	P.S.: To use this DApp, you need a Nebulas wallet account on mainnet with any positive number of NAS.
+
 
 ## Build Setup
 
