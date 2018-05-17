@@ -1,6 +1,16 @@
 # flea-market
 
-> A Vue.js project
+> A DApp based on Nebulas
+
+This application is based on Nebulas net. We used the smart contract on Nebulas Mainnet.
+
+To run it, 
+
+1. You can build this project and deploy it on the server(such as Tomcat, Nginx...). 
+
+2. Install the WebExtensionWallet on your chrome browser, see details here: https://github.com/ChengOrangeJu/WebExtensionWallet
+
+> A Vue.js project 
 
 ## Build Setup
 
