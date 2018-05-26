@@ -69,7 +69,11 @@
       }, "*")
 
       window.addEventListener('message', function(e) {
+        var curPath = tmp.$route.path
+
         if(!!e.data.data.neb_call){
+          if(curPath !== '/')
+            return
           // console.log("登录页面接收到")
           var s = JSON.stringify(e.data.data.neb_call);
           var m = JSON.parse(s);
@@ -86,7 +90,19 @@
               tmp.$router.push({path: '/homepage'})
             }
           }
+          return
         }
+        // console.log("接受到的txhash:"+ e.data.data.txhash.txhash)
+        // if(!!e.data.data.txhash.txhash){
+        //   if(curPath === '/register'){
+        //     alert("注册成功！")
+        //     tmp.$router.push({path: '/homepage'})
+        //   }else if(curPath === '/shopcart'){
+        //     alert("购买成功！")
+        //     tmp.$router.push({path: '/buynow'})
+        //   }
+        //   return
+        // }
       })
     },
     methods: {

@@ -141,7 +141,7 @@
                 'state': tmpOrder.status,
                 'time': tmpOrder.time
               }
-              console.log('本次条目；' + a);
+              console.log('本次条目：' + JSON.stringify(a));
               tmp.data6.push(a)
             }catch(e){
               continue

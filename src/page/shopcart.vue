@@ -138,6 +138,7 @@
         if(curPath !== '/shopcart')
           return
         if(!!e.data.data.neb_call){
+          // alert('页面加载成功')
           var s = JSON.stringify(e.data.data.neb_call)
           var m = JSON.parse(s)
           var result  = m.result
@@ -157,6 +158,14 @@
               'time': tmpGood.time
             }
             tmp.data6.push(a)
+          }
+          return
+        }
+        if(!!e.data.data.txhash){
+          if(!!e.data.data.txhash.txhash){
+            // console.log('购买成功')
+            // alert('购买成功')
+            tmp.$router.push({path: '/buynow'})
           }
         }
       })

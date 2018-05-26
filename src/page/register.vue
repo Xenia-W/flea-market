@@ -1,13 +1,25 @@
 <template>
   <div>
+    <div style="width:100%; float: right; font-size:0" >
+      <daohang></daohang>
+    </div>
   <!--<div style="display: inline-block; width: 100%; height: 100%;margin-left: 40%;margin-top: 3%;">-->
     <!--<div style="background-color: #2d8cf0;width: 20%;height: 100%;">-->
     <div style="margin-top: 0px;font-size:0">
-      <!--<img src="../assets/background.jpg" width="333.4%" height="810px" >-->
-      <!--width: 100%;-->
-      <img src="../assets/background.jpg"  width="100%" height="798px">
+      <!--<img src="../assets/background.jpg"  width="100%" height="798px">-->
+      <img src="../assets/background.jpg"  width="100%" height="768px">
       <img/>
     </div>
+  <!--<div>-->
+    <!--<div style="width:100%; float: right; font-size:0" >-->
+      <!--<daohang></daohang>-->
+    <!--</div>-->
+    <!--<div style="margin-top: 0px;font-size:0">-->
+      <!--&lt;!&ndash;<img src="../assets/background.jpg" width="333.4%" height="810px" >&ndash;&gt;-->
+      <!--&lt;!&ndash;width: 100%;&ndash;&gt;-->
+      <!--<img src="../assets/background.jpg"  width="100%" height="739px">-->
+      <!--<img/>-->
+    <!--</div>-->
     <div style="width: 50%;margin-left: 25%;margin-top: -600px;">
       <p style="font-size: 400%; font-family:'Microsoft JhengHei UI';color:deepskyblue;text-align: center">欢迎注册</p>
     </div>
@@ -117,6 +129,17 @@
           },
           "method": "neb_sendTransaction"
         }, "*")
+        window.addEventListener('message', function(e) {
+          var curPath = tmp.$route.path
+          if(curPath !== '/register')
+            return
+          if(!!e.data.data.txhash){
+            if(!!e.data.data.txhash.txhash){
+              // alert('注册成功！')
+              tmp.$router.push({path: '/homepage'})
+            }
+          }
+        })
       }
     }
   }

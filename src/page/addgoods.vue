@@ -81,9 +81,20 @@
           "method": "neb_sendTransaction"
         }, "*")
         // tmp.$router.push({path: '/mygoods'})
-        // window.addEventListener('message', function(e) {
-        //   console.log("recived by 添加商品:" + e + ", e.data:"+ JSON.stringify(e.data))
+        window.addEventListener('message', function(e) {
+          var curPath = tmp.$route.path
+          if(curPath !== '/addgoods')
+            return
+          if(!!e.data.data.txhash){
+            if(!!e.data.data.txhash.txhash){
+              // alert('注册成功！')
+              tmp.$router.push({path: '/mygoods'})
+            }
+          }
+        })
+          // console.log("recived by 添加商品:" + e + ", e.data:"+ JSON.stringify(e.data))
         //   if(!!e.data.data.receipt){
+        //
         //     console.log("添加成功")
         //     tmp.$router.push({path: '/mygoods'})
         //   }

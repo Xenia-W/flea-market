@@ -113,6 +113,9 @@
       }, "*")
 
       window.addEventListener('message', function(e) {
+        var curPath = tmp.$route.path
+        if(curPath !== '/usermanage')
+          return
         // console.log("recived by 用户信息界面:" + e + ", e.data:"+ JSON.stringify(e.data))
         if(!!e.data.data.neb_call) {
           // console.log('已经开始处理')
@@ -127,6 +130,12 @@
           tmp.city = result.city
           tmp.address = result.address
           tmp.money = result.balance
+          return
+        }
+        if(!!e.data.data.txhash){
+          if(!!e.data.data.txhash.txhash){
+            tmp.$router.push({path: '/usermanage'})
+          }
         }
       })
     },

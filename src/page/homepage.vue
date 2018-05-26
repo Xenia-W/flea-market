@@ -110,6 +110,9 @@
       }, "*")
 
       window.addEventListener('message', function(e) {
+        var curPath = tmp.$route.path
+        if(curPath !== '/homepage')
+          return
         if(!!e.data.data.neb_call){
           console.log("recived by 查询所有商品:" + e + ", e.data:"+ JSON.stringify(e.data))
           var s = JSON.stringify(e.data.data.neb_call)
